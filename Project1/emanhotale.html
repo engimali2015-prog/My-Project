@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al-EmanHotale</title>
+    <link rel ="stylesheet" href="styles/mystyle.css"/>
+
+</head>
+<body>
+    <header id="head">
+        <marquee><b> فندق الإيمان يرحب بكم</b></marquee>
+        <nav>
+            <ul>
+              <img src="logos/emanlogo1.jpg" />
+              <li><a href="emanhotel.html">الصفحة الرئيسية</a></li>
+              <li><a href="#booking">الحجز</a></li>
+              <li><a href="#contact">تواصل معنا</a></li>
+              <li><a href="about.html">حول</a></li>
+            </ul>
+          </nav>
+        </header>
+    </header>
+    <section id="hero">
+      <div class="hero-area">
+        <img src="logos/log1.jpg" class="logo-hero" >
+        <h1 id="head-hero">
+          نظام إدارة الفندق
+        </h1>
+      </div>
+      <br/>
+    </section>
+    <section><div class="width50" >
+      <h1>أهلاً بكم في  نظام الحجز الفندقي</h1>
+      <p>استمتع بأجواء الراحة والخصوصية في فندقنا</p>
+      <div class="width50">
+        <img class="welcome-img" src="images/emanhotel.jpg" />
+      </div>
+    </div></section>
+    <section id="booking">
+      <form method="get">
+        <div>
+          <h2>احجز غرفتك الآن</h2>
+          <summary><b>تمتع بالإقامة في فندقنا</b></summary>
+
+          <label for="your-name"><b>اسمك:</b> </label>
+
+          <input type="text" name="your-name" id="your-name" placeholder="أدخل اسمك هنا" disabled required/>
+          <br />
+          <br />
+          <label><b>بلدك:</b> </label>
+          <select name="country" >
+            <option>اختار بلدك ..</option>
+            <option>الممكلكة العربية السعودية</option>
+            <option>سوريا</option>
+            <option>ألمانيا</option>
+            <option>الولايات المتحدة الأمريكية</option>
+            <option>تركيا</option>
+            <option>قطر</option>
+          </select>
+          <br />
+          <br />
+          <label> <b>تاريخ الوصول:</b></label>
+
+          <input type="date" name="arriavl-date"/>
+          <br />
+          <label> <b>تاريخ المغادرة:</b></label>
+          <input type="date" />
+          <br />
+          <br />
+          <label>اختر نوع الغرفة:</label>
+          <br />
+          <label> غرفة مفردة:</label>
+          <input type="radio" name="roomt" />
+          <br />
+          <label> غرفة مزدوجة:</label>
+          <input type="radio" name="roomt" />
+          <br />
+          <label> جناح:</label>
+          <input type="radio" name="roomt" />
+          <br />
+          <br />
+          <label>اختر نوع الخدمة:</label>
+          <br />
+          <label> خدمة احادية:</label>
+          <input type="checkbox" />
+          <br />
+          <label> خدمة مزدوجة:</label>
+          <input type="checkbox" />
+          <br />
+          <label> خدمة جناح:</label>
+          <input type="checkbox" />
+          <br />
+        </div>
+        <input type="submit" value="Post Data"/>
+      </form>
+    </section>
+    <footer>
+      <nav>
+      <div id="contact">
+        <label><b>الاسم</b></label>
+        <input type="text" placeholder="أدخل اسمك هنا" />
+        <label><b>الرسالة</b></label>
+        <textarea placeholder="اكتب رسالتك هنا"></textarea>
+      </div>
+    </nav>
+      <img />
+      <p>all right reserved</p>
+      <script src="styles/scripts.js">
+        
+      </script>
+</body>
+</html>
