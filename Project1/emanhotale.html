@@ -46,55 +46,59 @@
 
           <label for="your-name"><b>اسمك:</b> </label>
 
-          <input type="text" name="your-name" id="your-name" placeholder="أدخل اسمك هنا" disabled required/>
+          <input type="text" name="your-name" id="your-name" placeholder="أدخل اسمك هنا"  required/>
           <br />
           <br />
           <label><b>بلدك:</b> </label>
-          <select name="country" >
-            <option>اختار بلدك ..</option>
-            <option>الممكلكة العربية السعودية</option>
-            <option>سوريا</option>
-            <option>ألمانيا</option>
-            <option>الولايات المتحدة الأمريكية</option>
-            <option>تركيا</option>
-            <option>قطر</option>
+          <select name="country" id="country" >
+            <option value="0">اختار بلدك ..</option>
+            <option value="1">الممكلكة العربية السعودية</option>
+            <option value="0.5">سوريا</option>
+            <option value="0.85">ألمانيا</option>
+            <option value="1.12">الولايات المتحدة الأمريكية</option>
+            <option value="1">تركيا</option>
+            <option value="1.5">قطر</option>
           </select>
           <br />
           <br />
           <label> <b>تاريخ الوصول:</b></label>
 
-          <input type="date" name="arriavl-date"/>
+          <input type="date" name="arriavl-date" id="arrivle-date"/>
           <br />
           <label> <b>تاريخ المغادرة:</b></label>
-          <input type="date" />
+          <input type="date" name="departure-date" id="departure-date"/>
           <br />
           <br />
           <label>اختر نوع الغرفة:</label>
           <br />
           <label> غرفة مفردة:</label>
-          <input type="radio" name="roomt" />
+          <input type="radio" name="roomt" id="single-room" value="30" />
           <br />
           <label> غرفة مزدوجة:</label>
-          <input type="radio" name="roomt" />
+          <input type="radio" name="roomt" id="double-room" value="50"/>
           <br />
           <label> جناح:</label>
-          <input type="radio" name="roomt" />
+          <input type="radio" name="roomt"id="sweet" value="80" />
           <br />
           <br />
           <label>اختر نوع الخدمة:</label>
           <br />
-          <label> خدمة احادية:</label>
-          <input type="checkbox" />
+          <label> انترنت:</label>
+          <input type="checkbox"id="wifi-service" value="1" />
           <br />
-          <label> خدمة مزدوجة:</label>
-          <input type="checkbox" />
+          <label> وجبة فطور:</label>
+          <input type="checkbox" id="breakfast-service" value="10"/>
           <br />
-          <label> خدمة جناح:</label>
-          <input type="checkbox" />
+          <label>  مسبح:</label>
+          <input type="checkbox" id="pool-service" value="5"/>
           <br />
+          <label> جيم:</label>
+          <input type="checkbox" id="gym-service" value="3"/>
+          <br/>
         </div>
         <input type="submit" value="Post Data"/>
       </form>
+      <button onclick="calc()">Calculate</button>
     </section>
     <footer>
       <nav>
