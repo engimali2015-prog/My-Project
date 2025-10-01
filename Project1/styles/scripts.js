@@ -24,5 +24,20 @@ function calc() {
     {
         alert("checked");
     }
-
 }
+/*function val() {
+    let yourName=document.getElementById('your-name');
+    console.log(yourName.value);
+    if(yourName.value==""){
+        alert("لا يجب ان يكون الاسم فارغاً");
+        return false;
+    }
+}*/
+function validateForm() {
+    let yourName=document.getElementById('your-name');
+    console.log(yourName.value);
+    if (yourName.value == "") {
+      yourName.style.border="2px solid red";
+      document.getElementById("MSG").innerHTML='<span style="color:red;"> يرجى تعبئة حقل الاسم </span>';
+    }
+  }

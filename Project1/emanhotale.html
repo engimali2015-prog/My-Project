@@ -45,8 +45,10 @@
           <summary><b>تمتع بالإقامة في فندقنا</b></summary>
 
           <label for="your-name"><b>اسمك:</b> </label>
-
-          <input type="text" name="your-name" id="your-name" placeholder="أدخل اسمك هنا"  required/>
+          <form name="myForm" action="/action_page.php" method="post">
+             <input type="text" name="your-name" id="your-name" placeholder="أدخل اسمك هنا"  required/>
+<div id="MSG"></div>
+          </form>
           <br />
           <br />
           <label><b>بلدك:</b> </label>
@@ -99,6 +101,7 @@
         <input type="submit" value="Post Data"/>
       </form>
       <button onclick="calc()">Calculate</button>
+      <button onclick="return validateForm()">تحقق</button>
     </section>
     <footer>
       <nav>
