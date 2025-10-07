@@ -1,7 +1,7 @@
 body{
     max-width: 1920px;
     /* background-color: rgb(5, 66, 57); */
-    background-image: url(/Project1/images/b3.jpg);
+    background-image: url(/images/b3.jpg);
     object-fit:contain;
   }
     section {
